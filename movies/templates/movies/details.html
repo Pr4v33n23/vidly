@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container"  style="padding-top: 20px;">
+    <div class="col s12 m2">
+        <table class="highlight z-depth-4">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ movie.title }}</td>
+                    <td>{{ movie.genre }}</td>
+                    <td>{{ movie.number_in_stock }}</td>
+                </tr>
+            </tbody>
+        </table>
+  </div>
+</div>
+
+{% endblock %}
+    
